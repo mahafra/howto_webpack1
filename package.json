@@ -1,0 +1,30 @@
+{
+  "name": "howto_webpack1",
+  "version": "1.0.0",
+  "description": "Nacharbeiten eines Tutorials zu webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "del-cli dist -f",
+    "build": "webpack",
+    "execute": "node dist/bundle.js",
+    "start": "npm run build -s && npm run execute -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahafra/howto_webpack1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahafra/howto_webpack1/issues"
+  },
+  "homepage": "https://github.com/mahafra/howto_webpack1#readme",
+  "devDependencies": {
+    "del-cli": "^1.0.0",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
