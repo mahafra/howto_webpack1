@@ -1,3 +1,6 @@
+ var HtmlwebpackPlugin = require('html-webpack-plugin');
+ 
+ 
  module.exports = {
      entry: './src/main.js',
      output: {
@@ -20,5 +23,11 @@
 				loader: 'handlebars-loader'
 			}
 		 ]
-	 }		 
+	 },
+	plugins: [
+		new HtmlwebpackPlugin({
+			title: 'Tutorial to Webpack',
+			template: 'src/index.html'
+		})
+		]
  };
